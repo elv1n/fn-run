@@ -1,0 +1,28 @@
+{
+  "name": "fn-run",
+  "version": "0.0.1",
+  "description": "A well-typed utility library to run and debug composition functions",
+  "repository": "https://github.com/elv1n/fn-run",
+  "author": "Elvin Dzhavadov",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint",
+    "test": "jest"
+  },
+  "main": "build/index.js",
+  "files": [
+    "./build"
+  ],
+  "devDependencies": {
+    "eslint-config-elv1n-react": "0.9.1",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "elv1n-react"
+    ]
+  }
+}
