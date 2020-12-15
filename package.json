@@ -1,6 +1,6 @@
 {
   "name": "fn-run",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A well-typed utility library to run and debug composition functions",
   "repository": "https://github.com/elv1n/fn-run",
   "author": "Elvin Dzhavadov",
