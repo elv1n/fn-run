@@ -32,6 +32,17 @@ fnRunDebug(parseFloat, console.log)('1');
 // [['initial', '1'], [parseFloat, 1], [log, undefined]]
 ```
 
+### `fnRace`
+The same as `fnRun` with different types declaration specifically designed for a single type for all functions. Useful to use with arrays as typescript cannot understand types from carrying function and sets `unknown`.
+
+```typescript
+// declare generic type for an array
+fnRace<Array<{id: number}>>(
+    arr => arr.concat([{id: 2}]),
+    arr => arr.concat([{id: 3}]),
+)([{ id: 1}])
+```
+
 
 ### `fnRunRight`
 ### `fnAsyncRun`
